@@ -3,6 +3,7 @@
 }
 
 .listContainer {
+  margin-top: 30px;
   display: inline-flex;
   flex-direction: row;
 }

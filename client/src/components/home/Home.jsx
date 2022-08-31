@@ -77,19 +77,29 @@ function OrderByWeight(e) {
 
 return (
     <div className="conteiner"> 
-    <div className="searchContainer">
-    <div>
-    <NavLink to ="/info">
-                <button className="info">Abaout this project</button>
-            </NavLink>
-         <SearchBar /> 
-         </div>
-         <div>
-         
-           
-        <Link to="/dog"><button className="createButton" >Create dog</button></Link>
-        </div>
-    </div>
+
+      <div className="hether-conteiner">
+      <section className="conteiner-info">
+          <NavLink to ="/info">
+              
+                  <button className="info">Abaout this project</button>
+              
+              </NavLink>
+      </section>
+
+
+        <div className="position-shearchBar">
+
+          <SearchBar /> 
+          </div>
+          
+
+          <div className="position-create-button">
+          
+            
+          <Link to="/dog"><button className="createButton" >Create dog</button></Link>
+          </div>
+      </div>
     <hr className="line"/>
     <div className="titleApp">
         <h1> Dogs app </h1>
@@ -150,6 +160,8 @@ return (
                       
                       <Link className="a" to={"/dogs/" + el.id}>
                       
+
+                  
                 <Card 
                 name={el.name} 
                 image={el.image} 
@@ -169,17 +181,17 @@ return (
         }
         </div>
         
-        <div>
+        <section className="paginado">
     
         <Paged
           dogsPerPage= { dogsPerPage }
           allDogs= { allDogs.length }                    
           pagedTotal= { pagedTotal }
         />
-              <div className="back">
-        <Link to="/"><button className="backButton" >Back</button></Link>
+              <div className="back-position">
+        <Link to="/"><button className="back-button" >Back</button></Link>
         </div>
-      </div>
+      </section>
       
     </div>
 )

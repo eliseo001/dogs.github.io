@@ -35,5 +35,7 @@
   transition: 1.8s; 
 }
 .SearchBar{
-  margin-left: -650px;
+  height: 55px;
+  width: 400px;
+  /* margin-left: -650px; */
 }

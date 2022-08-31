@@ -14,9 +14,9 @@ export default function Paged ({ dogsPerPage, allDogs, pagedTotal}) {
             <ul className="paged">                                                     
                 {pageNumber?.map(num =>(                                
                    <div className="listContainer" key={num}>
-                  <li className="number" key={num}>
-                        <a onClick={()=> pagedTotal(num)} className="link">{num}</a>  
-                    </li>
+                    <li className="number" key={num}>
+                            <a onClick={()=> pagedTotal(num)} className="link">{num}</a>  
+                        </li>
                     </div>
                 ))}         
             </ul>                                                

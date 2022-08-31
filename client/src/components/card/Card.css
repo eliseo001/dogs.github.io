@@ -1,10 +1,9 @@
 
 .box{
-    margin-top: 70px;
+    /* margin-top: 70px; */
     width: 300px;
     height: 550px;
-    margin-left: -50px;
-    margin-right: 20px;
+    
     border-radius: 20px;
     
     border: #70636c 3px solid;
